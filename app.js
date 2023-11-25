@@ -42,6 +42,6 @@ app.post('/send_email', (req, res) => {
     });
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 6969, () => {
   console.log(`App listening on port ${port}`);
 });
