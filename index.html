@@ -50,11 +50,123 @@
 
         <!-- Template Main CSS File -->
         <link href="./public/assets/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        
+        <script src="https://kit.fontawesome.com/ac2662f794.js" crossorigin="anonymous"></script>
+        <style>
+            .nav>li {
+    position: relative;
+    display: block;
+}
+            .hidden-xxs {
+                display: inline-block;
+            }
+            div ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+            .sticky{
+                background-color: #333; /* Example background color */
+        color: white; /* Example text color */
+        position: sticky;
+        background: rgba(0, 0, 0, 0.8);
+        /* Adjust this value for the desired margin from the top */
+        z-index: 1000; /* Ensures the header stays above other content */
+
+            }
+            .sticky1{
+                background-color: #333; /* Example background color */
+        color: white; /* Example text color */
+        position: sticky;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0rem; /* Adjust this value for the desired margin from the top */
+        z-index: 1000; /* Ensures the header stays above other content */
+
+            }
+            .table > :not(caption) > * > * {
+                background-color: whitesmoke;
+            }
+
+            .table-responsive {
+                border-radius: 1rem;
+            }
+            .fa ,.fab, .fa-brands {
+                display: inline-block;
+                
+                width: 30px;
+                border: 1px solid;
+                border-radius: 50%;
+               
+                line-height: 28px;
+                -webkit-transition: color .25s;
+                transition: color .25s;
+                text-align: center; /* Added property */
+            }
+            
+                .before:before {
+                    content: " ";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 40%;
+                    border-bottom: 96px solid #ffc551bb;
+                    border-right: 80px solid transparent;
+                    z-index: -1;
+                }
+
+                @media (max-width: 576px) {
+                    .before:before {
+                        display: block;
+                        visibility: hidden;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .before:before {
+                        display: block;
+                        visibility: hidden;
+                    }
+                }
+            </style>
+        </style>
+        
     </head>
 
     <body>
+        <div class="container">
+            <div class= "before" style="display: flex; justify-content: end; margin-right: 10rem; padding: 1rem; gap: 3rem;">
+                
+                <p>
+                    <strong>Əlaqə: </strong> +994 51 230 97
+                    17<br />
+                    <strong>Email: </strong>
+                    info@archdigital.az<br />
+                </p>
+                
+                <ul style="margin-block-start: 0.5rem;">
+                    <li style="display: flex; gap: 4px;">
+                        <a target="_blank" href="https://www.facebook.com/archdigitalstudio">
+                            <i class="fab fa-facebook" style="color: #316FF6;"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/arch_digital_">
+                            <i class="fab fa-instagram" style="color: #ff0084;" ></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/company/arch-digitalagency">
+                            <i class="fab fa-linkedin-in" style="color: #3282bf;"></i>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
         <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top">
+        <header id="header" class="sticky" >
             <div
                 class="container d-flex align-items-center justify-content-lg-between"
             >
@@ -95,23 +207,18 @@
                             ></a>
                             <ul>
                                 <li class="dropdown">
-                                    <a href="./public/pages/economPacket.html"
-                                        ><span>Ekonom Paket</span></a
-                                    >
-                                </li>
-                                <li class="dropdown">
-                                    <a href="./public/pages/standartPacket.html"
-                                        ><span>Standart Paket</span></a
+                                    <a href="./public/pages/packets.html"
+                                        ><span>Adi Paketlər</span></a
                                     >
                                 </li>
                                 <li class="dropdown">
                                     <a href="./public/pages/premiumPacket.html"
-                                        ><span>Premium Paket</span></a
+                                        ><span>Premium Paketlər</span></a
                                     >
                                 </li>
                                 <li class="dropdown">
-                                    <a href="./public/pages/creationPacket.html"
-                                        ><span>"Özün Yarat" Paketi</span></a
+                                    <a href="./public/pages/servicesCost.html"
+                                        ><span>Xidmət Qiymətləri</span></a
                                     >
                                 </li>
                             </ul>
@@ -158,55 +265,55 @@
                     data-aos="zoom-in"
                     data-aos-delay="250"
                 >
-                    <div class="col-xl-2 col-md-4">
-                        <div class="icon-box">
-                            <i class="ri-store-line"></i>
-                            <h3>
-                                <a href="./public/pages/smmServices.html"
-                                    >SMM Xidmətləri</a
-                                >
-                            </h3>
-                        </div>
+                    <div class="col-xl-2 col-md-4" >
+                        <a href="./public/pages/smmServices.html">
+                            <div class="icon-box" >
+                                <i class="ri-store-line"></i>
+                                <h3>
+                                   SMM Xidmətləri
+                                </h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-xl-2 col-md-4">
+                        <a href="./public/pages/seoServices.html">
                         <div class="icon-box">
                             <i class="ri-window-line"></i>
                             <h3>
-                                <a href="./public/pages/seoServices.html"
-                                    >SEO Xidmetleri</a
-                                >
+                                SEO Xidmetleri
                             </h3>
                         </div>
+                         </a>
                     </div>
                     <div class="col-xl-2 col-md-4">
+                        <a href="./public/pages/developingPages.html">
                         <div class="icon-box">
                             <i class="ri-calendar-todo-line"></i>
                             <h3>
-                                <a href="./public/pages/developingPages.html"
-                                    >Sayt Yaradılması</a
-                                >
+                                Sayt Yaradılması
                             </h3>
                         </div>
+                         </a>
                     </div>
                     <div class="col-xl-2 col-md-4">
+                        <a href="./public/pages/logoCreation.html">
                         <div class="icon-box">
                             <i class="ri-paint-brush-line"></i>
                             <h3>
-                                <a href="./public/pages/logoCreation.html"
-                                    >Logo
-                                </a>
+                                Logo
                             </h3>
                         </div>
+                            </a>
                     </div>
                     <div class="col-xl-2 col-md-4">
+                        <a href="./public/pages/hostingServices.html">
                         <div class="icon-box">
                             <i class="ri-database-2-line"></i>
                             <h3>
-                                <a href="./public/pages/hostingServices.html"
-                                    >Hosting</a
-                                >
+                                Hosting
                             </h3>
                         </div>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -471,7 +578,7 @@
                         </a>
 
                         <a
-                            href="./public/pages/createPages.html"
+                            href="./public/pages/developingPages.html"
                             class="col-lg-4 col-md-6 d-flex align-items-stretch"
                             data-aos="zoom-in"
                             data-aos-delay="100"
@@ -1007,12 +1114,13 @@
             <!-- ======= Team Section ======= -->
             <section id="team" class="team">
                 <div class="container" data-aos="fade-up">
-                    <div class="section-title">
-                        <h2>komanda</h2>
-                        <p>komandamız nəzərdən keçirin</p>
+                    <div class="section-title testimonial-item">
+                        <h2 >İdarə heyəti</h2>
+                        <p>Heyətimizi nəzər keçirin</p>
                     </div>
 
-                    <div class="row">
+                    <div style="display: flex;
+                    justify-content: center;" class="row">
                         <div
                             class="col-lg-3 col-md-6 d-flex align-items-stretch"
                         >
@@ -1023,21 +1131,18 @@
                             >
                                 <div class="member-img">
                                     <img
-                                        src="./public/assets/img/team/team_seyhunsaatov.jpg"
+                                        src="./public/assets/img/team/team_seyhun.jpeg"
                                         class="img-fluid"
                                         alt=""
                                     />
                                     <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.facebook.com/seyhunsaatov"
                                             ><i class="bi bi-facebook"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href=" https://www.linkedin.com/in/seyhun-saatov/"
                                             ><i class="bi bi-instagram"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.instagram.com/seyhunsaatov/"
                                             ><i class="bi bi-linkedin"></i
                                         ></a>
                                     </div>
@@ -1048,8 +1153,40 @@
                                 </div>
                             </div>
                         </div>
-
                         <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/team/team_gyulmiaashirova.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a target="_blank" href="https://www.facebook.com/gyulmia.ashirova.9"
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a target="_blank" href="https://www.instagram.com/gyulmia/"
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/gyulmia-ashirova-14b5a11a2/"
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Gyulmia Aşirova</h4>
+                                    <span>Advisory Board Member</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div
                             class="col-lg-3 col-md-6 d-flex align-items-stretch"
                         >
                             <div
@@ -1064,28 +1201,90 @@
                                         alt=""
                                     />
                                     <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.facebook.com/TheHamidov"
                                             ><i class="bi bi-facebook"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.instagram.com/ravihamidov"
                                             ><i class="bi bi-instagram"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.linkedin.com/in/ravihamidov"
                                             ><i class="bi bi-linkedin"></i
                                         ></a>
                                     </div>
                                 </div>
                                 <div class="member-info">
                                     <h4>Ravi Hamidov</h4>
-                                    <span>Chief Technical Officer</span>
+                                    <span>Front-end Developer</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div
+                        </div> -->
+                        <!-- <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img 
+                                        src="./public/assets/img/team/team_muzaffarmustafayev.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        
+                                        <a target ="_blank" href="https://m.facebook.com/profile.php/?id=100025387429029"
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a target ="_blank" href="https://www.instagram.com/muzaffar_mustafayev/"
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a target ="_blank" href="https://www.linkedin.com/in/muzaffar-mustafayev?trk=contact-info"
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Muzaffar Mustafayev</h4>
+                                    <span>DevOps Engineer</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img 
+                                        src="./public/assets/img/team/team_vidadixanishov.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        
+                                        <a target ="_blank" href="https://www.facebook.com/vidadi.xanisov?mibextid=ZbWKwL"
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a target ="_blank" href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a target ="_blank" href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Vidadi Xanişov</h4>
+                                    <span>Sales Specialist</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div
                             class="col-lg-3 col-md-6 d-flex align-items-stretch"
                         >
                             <div
@@ -1100,16 +1299,13 @@
                                         alt=""
                                     />
                                     <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
+                                        <a target="_blank" href=""
                                             ><i class="bi bi-facebook"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.instagram.com/arzueyyuboffa?igsh=ZHNtMWFpc2l0bXM5"
                                             ><i class="bi bi-instagram"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.linkedin.com/in/arzu-eyyubova-a57a3429b/"
                                             ><i class="bi bi-linkedin"></i
                                         ></a>
                                     </div>
@@ -1119,82 +1315,8 @@
                                     <span>SMM Manager</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div
-                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
-                        >
-                            <div
-                                class="member"
-                                data-aos="fade-up"
-                                data-aos-delay="300"
-                            >
-                                <div class="member-img">
-                                    <img
-                                        src="./public/assets/img/team/team_xadicealizade.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                    <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-facebook"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-instagram"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-linkedin"></i
-                                        ></a>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h4>Xədicə Əlizadə</h4>
-                                    <span>Copywriter</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div
-                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
-                        >
-                            <div
-                                class="member"
-                                data-aos="fade-up"
-                                data-aos-delay="100"
-                            >
-                                <div class="member-img">
-                                    <img
-                                        src="./public/assets/img/team/team_zaramalikzade.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                    <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-facebook"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-instagram"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-linkedin"></i
-                                        ></a>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h4>Zəhra Məlikzadə</h4>
-                                    <span>SMM Manager</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
+                        </div> -->
+                        <!-- <div
                             class="col-lg-3 col-md-6 d-flex align-items-stretch"
                         >
                             <div
@@ -1209,16 +1331,14 @@
                                         alt=""
                                     />
                                     <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
+                                        
+                                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100067361723406&mibextid=ZbWKwL"
                                             ><i class="bi bi-facebook"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.instagram.com/musazade.qabil?igsh=MzNlNGNkZWQ4Mg=="
                                             ><i class="bi bi-instagram"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href=" https://www.linkedin.com/in/qabil-musazade-947160233"
                                             ><i class="bi bi-linkedin"></i
                                         ></a>
                                     </div>
@@ -1228,9 +1348,111 @@
                                     <span>Videograph</span>
                                 </div>
                             </div>
+                        </div> -->
+                        <!-- <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/team/team_rashadrahimli.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        
+                                        <a target ="_blank" href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a target ="_blank" href="https://www.instagram.com/sometimesimissbutihavenofeel?igsh=MTF4NHh4Z2VldWR5ZQ=="
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a target ="_blank" href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Rashad Rahimli</h4>
+                                    <span>Fotograph & Videograph</span>
+                                </div>
+                            </div>
                         </div>
-
+                        
+                    </div> -->
+                    <!-- <div class="row">
                         <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/team/anarbayramov.jpeg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        
+                                        <a target="_blank" href="https://www.facebook.com/anar.bayramov.589583?mibextid=LQQJ4d"
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a target="_blank" href="https://www.instagram.com/anarbayramliportfolio?igsh=dm9idXU1YTUwZWVl"
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a target="_blank" href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Anar Bayramov</h4>
+                                    <span>Fotograph & Videograph</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/team/team_zaramalikzade.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        
+                                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100073386350563&mibextid=9R9pXO"
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a target="_blank" href="https://instagram.com/_mzada_z__?igshid=YzAwZjE1ZTI0Zg=="
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/zahra-malikzada-137365266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Zəhra Məlikzadə</h4>
+                                    <span>SMM Manager</span>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div
                             class="col-lg-3 col-md-6 d-flex align-items-stretch"
                         >
                             <div
@@ -1246,16 +1468,14 @@
                                         alt=""
                                     />
                                     <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
+                                        
+                                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100090504736400&mibextid=ZbWKwL"
                                             ><i class="bi bi-facebook"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.instagram.com/z.szadehh?igsh=dmY5MzNmaXB3cWli"
                                             ><i class="bi bi-instagram"></i
                                         ></a>
-                                        <a href=""
+                                        <a target="_blank" href="https://www.linkedin.com/in/zahra-suleyman-6b8b0b268"
                                             ><i class="bi bi-linkedin"></i
                                         ></a>
                                     </div>
@@ -1265,9 +1485,42 @@
                                     <span>UX/UI Designer</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <!-- <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/team/team_xadicealizade.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        
+                                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100084245144068&mibextid=ZbWKwL"
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a target="_blank" href="https://instagram.com/alizade.khadija?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/khadija-alizade-0b5504243"
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Xədicə Əlizadə</h4>
+                                    <span>Copywriter</span>
+                                </div>
+                            </div>
+                        </div> -->
 
-                        <div
+                        <!-- <div
                             class="col-lg-3 col-md-6 d-flex align-items-stretch"
                         >
                             <div
@@ -1282,16 +1535,14 @@
                                         alt=""
                                     />
                                     <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
+                                        
+                                        <a target ="_blank" href="https://www.facebook.com/profile.php?id=100084101591947&mibextid=ZbWKwL"
                                             ><i class="bi bi-facebook"></i
                                         ></a>
-                                        <a href=""
+                                        <a target ="_blank" href="https://www.instagram.com/rasulcabbarovv?igsh=MTh6Z3k4bG8yYWdoMA=="
                                             ><i class="bi bi-instagram"></i
                                         ></a>
-                                        <a href=""
+                                        <a target ="_blank" href="https://www.linkedin.com/in/rasul-cabbarov-829295256"
                                             ><i class="bi bi-linkedin"></i
                                         ></a>
                                     </div>
@@ -1301,77 +1552,9 @@
                                     <span>Designer</span>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
-                        >
-                            <div
-                                class="member"
-                                data-aos="fade-up"
-                                data-aos-delay="300"
-                            >
-                                <div class="member-img">
-                                    <img
-                                        src="./public/assets/img/team/team_muzaffarmustafayev.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                    <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-facebook"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-instagram"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-linkedin"></i
-                                        ></a>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h4>Muzaffar Mustafayev</h4>
-                                    <span>DevOps Engineer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
-                        >
-                            <div
-                                class="member"
-                                data-aos="fade-up"
-                                data-aos-delay="300"
-                            >
-                                <div class="member-img">
-                                    <img
-                                        src="./public/assets/img/team/team_rashadrahimli.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                    <div class="social">
-                                        <a href=""
-                                            ><i class="bi bi-twitter"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-facebook"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-instagram"></i
-                                        ></a>
-                                        <a href=""
-                                            ><i class="bi bi-linkedin"></i
-                                        ></a>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h4>Rashad Rahimli</h4>
-                                    <span>Fotograph & Videograph</span>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
+                        
+                        
                     </div>
                 </div>
             </section>
@@ -1633,8 +1816,28 @@
         <script src="./public/assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="./public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="./public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
         <!-- Template Main JS File -->
+       
         <script src="./public/assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(window).scroll(function() {
+                var header = $('#header');
+                var stickyNavTop = 5 * 16; 
+                var scrollTop = $(window).scrollTop();
+
+                if (scrollTop > stickyNavTop) {
+                    header.removeClass('sticky');
+                    header.addClass('sticky1');
+                }
+                else {
+                    header.removeClass('sticky1');
+                    header.addClass('sticky');
+                }
+            });
+        </script>
+
+        </body>
+        </html>
     </body>
 </html>

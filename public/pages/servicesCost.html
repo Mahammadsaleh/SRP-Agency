@@ -48,14 +48,37 @@
         <!-- Template Main CSS File -->
         <link href="../assets/css/style.css" rel="stylesheet" />
         <link href="../assets/css/innerStyle.css" rel="stylesheet" />
-
+        
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        
+        <script src="https://kit.fontawesome.com/ac2662f794.js" crossorigin="anonymous"></script>
         <style>
+            tr th,td {
+                font-size: 1.5rem;
+                font-weight: 400;
+                
+            }
+         
+            thead tr th {  font-weight: 900;
+            color: #e6aa03 !important;}
             .table > :not(caption) > * > * {
                 background-color: whitesmoke;
             }
 
             .table-responsive {
                 border-radius: 1rem;
+            }
+            .fa ,.fab, .fa-brands {
+                display: inline-block;
+                color: #e6aa03;
+                width: 30px;
+                border: 1px solid;
+                border-radius: 50%;
+               
+                line-height: 28px;
+                -webkit-transition: color .25s;
+                transition: color .25s;
+                text-align: center; /* Added property */
             }
         </style>
     </head>
@@ -67,9 +90,9 @@
                 class="container d-flex align-items-center justify-content-lg-between"
             >
                 <h1 class="logo me-auto me-lg-0">
-                    <a href="index.html"
+                    <a href="./../../index.html"
                         ><img
-                            src="../../public/assets/img/heroLogoArch.png"
+                            src="../../public/assets/img/logo/logo_archdigital.png"
                             alt="logo"
                         />
                     </a>
@@ -141,7 +164,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="nav-link scrollto" href="#contact"
+                            <a class="nav-link scrollto" href="../../index.html#contact"
                                 >Əlaqə</a
                             >
                         </li>
@@ -177,60 +200,126 @@
             <!-- ======= Portfolio Details Section ======= -->
             <section id="portfolio-details" class="portfolio-details">
                 <div class="container">
-                    <h2 class="display-6 text-center mb-4">Paketler</h2>
+                    <h2 class="display-6 text-center mb-4">Xidmətlər</h2>
 
                     <div class="table-responsive">
                         <table class="table text-center">
                             <thead>
                                 <tr>
-                                    <th style="width: 34%"></th>
-                                    <th style="width: 22%">Ekonom</th>
-                                    <th style="width: 22%">Standart</th>
-                                    <th style="width: 22%">Premium</th>
+                                    <th style="display: flex;">Xidmətlər</th>
+                                    <th style="width: 22%">Qiymət</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row" class="text-start">Logo</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <th scope="row" class="text-start">Təkli Post</th>
+                                    <td>10 AZN</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text-start">Post</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <th scope="row" class="text-start">Karusel post</th>
+                                    <td>post sayı*4 AZN</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="text-start">Foto</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <th scope="row" class="text-start">Panorama post</th>
+                                    <td>20 AZN</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-start">
-                                        Video
+                                        Şablon logo
                                     </th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>20-50 AZN</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-start">
-                                        Reklam
+                                        Sıfırdan logo hazırlanması
                                     </th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>70-100 AZN</td>
+                                </tr>
+                                <tr >
+                                    <th scope="row" class="text-start" >
+                                        Banner hazırlanması
+                                    </th>
+                                    <td>30-50 AZN</td>
+                                    
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-start">
-                                        Sosial Media
+                                        Roll up
                                     </th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>40-50 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Yaxa kartı
+                                    </th>
+                                    <td>10 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        TikTok / İnstagram Reels çəkilişi
+                                    </th>
+                                    <td>25 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Adres çəkilişi
+                                    </th>
+                                    <td>60 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Motion animasiya
+                                    </th>
+                                    <td>20-50 AZN</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Promo videolar
+                                    </th>
+                                    <td>100-200 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Tanıtım videosu
+                                    </th>
+                                    <td>150-400 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        1 saatlıq fotoçəkiliş
+                                    </th>
+                                    <td>150 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        2 saatlıq fotoçəkiliş
+                                    </th>
+                                    <td>200 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        3-4 saatlıq fotoçəkiliş
+                                    </th>
+                                    <td>250-300 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Tam gün fotoçəkiliş
+                                    </th>
+                                    <td>450 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Bir neçə günlük fotoçəkiliş
+                                    </th>
+                                    <td>gün sayı*500 AZN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Sayt yaradılması
+                                    </th>
+                                    <td>500-2000 AZN</td>
                                 </tr>
                             </tbody>
                         </table>
