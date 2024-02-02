@@ -1,0 +1,82 @@
+.nav > li {
+  position: relative;
+  display: block;
+}
+.hidden-xxs {
+  display: inline-block;
+}
+div ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.sticky {
+  background-color: #333; /* Example background color */
+  color: white; /* Example text color */
+  position: sticky;
+  background: rgba(0, 0, 0, 0.8);
+  /* Adjust this value for the desired margin from the top */
+  z-index: 1000; /* Ensures the header stays above other content */
+}
+.sticky1 {
+  background-color: #333; /* Example background color */
+  color: white; /* Example text color */
+  position: sticky;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0rem; /* Adjust this value for the desired margin from the top */
+  z-index: 1000; /* Ensures the header stays above other content */
+}
+.table > :not(caption) > * > * {
+  background-color: whitesmoke;
+}
+
+.table-responsive {
+  border-radius: 1rem;
+}
+.fa,
+.fab,
+.fa-brands {
+  display: inline-block;
+
+  width: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+
+  line-height: 28px;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  text-align: center; /* Added property */
+}
+
+.before:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  border-bottom: 96px solid #ffc551bb;
+  border-right: 80px solid transparent;
+  z-index: -1;
+}
+
+@media (max-width: 576px) {
+  .before:before {
+    display: block;
+    visibility: hidden;
+  }
+  .before{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .before:before {
+    display: block;
+    visibility: hidden;
+  }
+}
+
