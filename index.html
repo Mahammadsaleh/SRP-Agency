@@ -1744,22 +1744,9 @@
        
         <script src="./public/assets/js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(window).scroll(function() {
-                var header = $('#header');
-                var stickyNavTop = 5 * 16; 
-                var scrollTop = $(window).scrollTop();
 
-                if (scrollTop > stickyNavTop) {
-                    header.removeClass('sticky');
-                    header.addClass('sticky1');
-                }
-                else {
-                    header.removeClass('sticky1');
-                    header.addClass('sticky');
-                }
-            });
-        </script>
+        <!-- Sticky Header JS -->
+            <script src="./public/assets/js/stickyHeader.js"></script>
 
         </body>
         </html>
