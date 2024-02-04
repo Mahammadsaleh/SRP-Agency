@@ -48,18 +48,82 @@
         <!-- Template Main CSS File -->
         <link href="../assets/css/style.css" rel="stylesheet" />
         <link href="../assets/css/innerStyle.css" rel="stylesheet" />
+
+        <!-- Banner and Navbar CSS File -->
+        <link href="./../assets/css/banner.css" rel="stylesheet" />
+
+        <script
+            src="https://kit.fontawesome.com/ac2662f794.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
 
     <body>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-6 col-md-12 before"
+                    style="
+                        display: flex;
+                        justify-content: end;
+                        margin-right: 10rem;
+                        padding: 1rem;
+                        gap: 3rem;
+                    "
+                >
+                    <div>
+                        <p>
+                            <strong>Əlaqə: </strong> +994 51 230 97 17<br />
+                            <strong>Email: </strong> info@archdigital.az<br />
+                        </p>
+                    </div>
+
+                    <div>
+                        <ul style="margin-block-start: 0.5rem">
+                            <li style="display: flex; gap: 4px">
+                                <a
+                                    target="_blank"
+                                    href="https://www.facebook.com/archdigitalstudio"
+                                >
+                                    <i
+                                        class="fab fa-facebook"
+                                        style="color: #316ff6"
+                                    ></i>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.instagram.com/arch_digital_"
+                                >
+                                    <i
+                                        class="fab fa-instagram"
+                                        style="color: #ff0084"
+                                    ></i>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/company/arch-digitalagency"
+                                >
+                                    <i
+                                        class="fab fa-linkedin-in"
+                                        style="color: #3282bf"
+                                    ></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top">
+        <header id="header" class="sticky">
             <div
                 class="container d-flex align-items-center justify-content-lg-between"
             >
                 <h1 class="logo me-auto me-lg-0">
                     <a href="./../../index.html"
                         ><img
-                            src="../../public/assets/img/logo/logo_archdigital.png"
+                            src="../assets/img/logo/logo_archdigital.png"
                             alt="logo"
                         />
                     </a>
@@ -67,22 +131,30 @@
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
                         <li>
-                            <a class="nav-link scrollto" href="./../../index.html#about"
+                            <a
+                                class="nav-link scrollto"
+                                href="./../../index.html#about"
                                 >Haqqımızda</a
                             >
                         </li>
                         <li>
-                            <a class="nav-link scrollto" href="./../../index.html#services"
+                            <a
+                                class="nav-link scrollto"
+                                href="./../../index.html#services"
                                 >Xidmətlərimiz</a
                             >
                         </li>
                         <li>
-                            <a class="nav-link scrollto" href="./../../index.html#portfolio"
+                            <a
+                                class="nav-link scrollto"
+                                href="./../../index.html#portfolio"
                                 >Portfolio</a
                             >
                         </li>
                         <li>
-                            <a class="nav-link scrollto" href="./../../index.html#team"
+                            <a
+                                class="nav-link scrollto"
+                                href="./../../index.html#team"
                                 >Komanda</a
                             >
                         </li>
@@ -93,33 +165,27 @@
                             ></a>
                             <ul>
                                 <li class="dropdown">
-                                    <a
-                                        href="../../public/pages/economPacket.html"
-                                        ><span>Ekonom Paket</span></a
+                                    <!-- <a href="./public/pages/packets.html" -->
+                                    <a href="./packets.html"
+                                        ><span>Adi Paketlər</span></a
                                     >
                                 </li>
                                 <li class="dropdown">
-                                    <a
-                                        href="../../public/pages/standartPacket.html"
-                                        ><span>Standart Paket</span></a
+                                    <a href="./premiumPacket.html"
+                                        ><span>Premium Paketlər</span></a
                                     >
                                 </li>
                                 <li class="dropdown">
-                                    <a
-                                        href="../../public/pages/premiumPacket.html"
-                                        ><span>Premium Paket</span></a
-                                    >
-                                </li>
-                                <li class="dropdown">
-                                    <a
-                                        href="../../public/pages/creationPacket.html"
-                                        ><span>"Özün Yarat" Paketi</span></a
+                                    <a href="./servicesCost.html"
+                                        ><span>Xidmət Qiymətləri</span></a
                                     >
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a class="nav-link scrollto" href="./../../index.html#contact"
+                            <a
+                                class="nav-link scrollto"
+                                href="./../../index.html#contact"
                                 >Əlaqə</a
                             >
                         </li>
@@ -127,7 +193,9 @@
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
 
-                <a href="#contact" class="get-started-btn scrollto"
+                <a
+                    href="./../../index.html#contact"
+                    class="get-started-btn scrollto"
                     >Müraciət et</a
                 >
                 <!-- .navbar -->
@@ -193,28 +261,25 @@
                                             ><i class="bi bi-chevron-right"></i
                                         ></strong>
                                         Əməkdaşlıq Tənzimləmək
-
                                     </li>
                                     <li>
                                         <strong
                                             ><i class="bi bi-chevron-right"></i
                                         ></strong>
-                                        Yaradıcı İçəriklər Əldə Etərək Fəallıqlar Təşkil Etmək
-
+                                        Yaradıcı İçəriklər Əldə Etərək
+                                        Fəallıqlar Təşkil Etmək
                                     </li>
                                     <li>
                                         <strong
                                             ><i class="bi bi-chevron-right"></i
                                         ></strong>
-                                        Fotoçəkilişlər 
-
+                                        Fotoçəkilişlər
                                     </li>
                                     <li>
                                         <strong
                                             ><i class="bi bi-chevron-right"></i
                                         ></strong>
                                         Müştərilər Arasında Rəqabət Yaratmaq
-
                                     </li>
                                     <li>
                                         <strong
@@ -233,8 +298,19 @@
                             <div class="portfolio-description">
                                 <h2>Reklam xidmətinin üstünlükləri</h2>
                                 <p>
-                                    Reklamlar müştərilər üçün maraqlı və interaktiv təcrübə yaratmağın effektiv bir yolu olaraq nümayiş olunur. Bu tədbirlər, müştərilərin ətrafındakı brendin ətraflı və pozitiv təcrübələrlə tanış olmalarına kömək edir və sosial media platformalarında paylaşımların artmasına səbəb olur. Əməkdaşlıq tənzimləmək, yaradıcı içəriklər əldə etmək və müştərilər arasında  rəqabət yaratmaq üçün əla bir təşviqat olan fotoçəkilişlər, brendin tanınmasını artırmağa və müştərilərlə daha yaxından əlaqə qurmağa nail olur.
-
+                                    Reklamlar müştərilər üçün maraqlı və
+                                    interaktiv təcrübə yaratmağın effektiv bir
+                                    yolu olaraq nümayiş olunur. Bu tədbirlər,
+                                    müştərilərin ətrafındakı brendin ətraflı və
+                                    pozitiv təcrübələrlə tanış olmalarına kömək
+                                    edir və sosial media platformalarında
+                                    paylaşımların artmasına səbəb olur.
+                                    Əməkdaşlıq tənzimləmək, yaradıcı içəriklər
+                                    əldə etmək və müştərilər arasında rəqabət
+                                    yaratmaq üçün əla bir təşviqat olan
+                                    fotoçəkilişlər, brendin tanınmasını
+                                    artırmağa və müştərilərlə daha yaxından
+                                    əlaqə qurmağa nail olur.
                                 </p>
                             </div>
                         </div>
@@ -393,5 +469,7 @@
 
         <!-- Template Main JS File -->
         <script src="../assets/js/main.js"></script>
+        
+        <script src="../assets/js/stickyHeader.js"></script>
     </body>
 </html>
