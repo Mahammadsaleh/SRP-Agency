@@ -128,7 +128,7 @@ h6 {
     line-height: 1;
     font-weight: 700;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 #header .logo a {
@@ -424,7 +424,7 @@ h6 {
     font-weight: 700;
     line-height: 64px;
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 #hero h1 span {
@@ -518,9 +518,9 @@ section {
     line-height: 1px;
     margin: 0 0 5px 0;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #aaaaaa;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .section-title h2::after {
@@ -537,8 +537,8 @@ section {
     margin: 0;
     font-size: 36px;
     font-weight: 700;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    /* text-transform: uppercase; */
+    font-family: "Raleway", sans-serif;
     color: #151515;
 }
 
@@ -548,7 +548,7 @@ section {
 .about .content h3 {
     font-weight: 700;
     font-size: 28px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .about .content ul {
@@ -766,7 +766,7 @@ section {
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #444444;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
@@ -833,7 +833,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-info p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0;
     margin: 0;
     font-style: italic;
@@ -995,7 +995,7 @@ section {
     margin-top: 20px;
     color: #3b3b3b;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     transition: ease-in-out 0.3s;
 }
 
@@ -1453,7 +1453,7 @@ section {
     padding: 2px 0 2px 0;
     line-height: 1;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 #footer .footer-top .footer-info h3 span {
