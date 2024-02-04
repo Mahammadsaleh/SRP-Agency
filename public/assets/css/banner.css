@@ -1,14 +1,82 @@
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  --bs-gutter-x: 0;
-  --webkit--bs-gutter-x: 0;
-  --moz--bs-gutter-x: 0;
+.top-banner{
+  padding-top: 10px;
 }
+
+@media (min-width: 1200px) {
+  .top-banner{
+    display: flex;
+    flex-direction: row;
+  }
+  .before:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 40%;
+    height: 10px;
+    border-bottom:  76px solid #ffc551bb;
+    border-right: 80px solid transparent;
+    z-index: -1;
+  }
+}
+
+/* Large Devices (lg): Large Desktops (992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your CSS rules for large devices go here */
+  .top-banner{
+    display: flex;
+    flex-direction: row;
+  }
+  .before:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 40%;
+    height: 10px;
+    border-bottom:  76px solid #ffc551bb;
+    border-right: 80px solid transparent;
+    z-index: -1;
+  }
+}
+
+/* Medium Devices (md): Desktops (768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your CSS rules for medium devices go here */
+  .top-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Small Devices (sm): Tablets (576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your CSS rules for small devices go here */
+  .top-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Extra Small Devices (xs): Phones (less than 576px) */
+@media (max-width: 575.98px) {
+  /* Your CSS rules for extra small devices go here */
+  .top-banner{
+    display: flex;
+    flex-direction: column;
+    div{
+      margin: 0 auto;
+      ul{
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+
 
 .nav > li {
   position: relative;
@@ -72,31 +140,5 @@ div ul {
   border: 1px solid #0e76a8;
 } */
 
-.before:before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 40%;
-  border-bottom: 96px solid #ffc551bb;
-  border-right: 80px solid transparent;
-  z-index: -1;
-}
 
-@media (max-width: 576px) {
-  .before:before {
-    display: block;
-    visibility: hidden;
-  }
-  div ul{
-    padding-inline-start: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .before:before {
-    display: block;
-    visibility: hidden;
-  }
-}
 
