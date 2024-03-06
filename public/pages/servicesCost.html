@@ -61,43 +61,45 @@
             crossorigin="anonymous"
         ></script>
         <style>
-            tr th,
-            td {
-                font-size: 1.5rem;
-                font-weight: 400;
-            }
+            @media screen and (min-width: 600px) {
+                tr th,
+                td {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
 
-            thead tr th {
-                font-weight: 900;
-                color: #e6aa03 !important;
-            }
-            .table > :not(caption) > * > * {
-                background-color: whitesmoke;
-            }
+                thead tr th {
+                    font-weight: 900;
+                    color: #e6aa03 !important;
+                }
+                .table > :not(caption) > * > * {
+                    background-color: whitesmoke;
+                }
 
-            .table-responsive {
-                border-radius: 1rem;
-            }
-            .fa,
-            .fab,
-            .fa-brands {
-                display: inline-block;
-                color: #e6aa03;
-                width: 30px;
-                /* border: 1px solid; */
-                /* border-radius: 50%; */
+                .table-responsive {
+                    border-radius: 1rem;
+                }
+                .fa,
+                .fab,
+                .fa-brands {
+                    display: inline-block;
+                    color: #e6aa03;
+                    width: 30px;
+                    /* border: 1px solid; */
+                    /* border-radius: 50%; */
 
-                line-height: 28px;
-                -webkit-transition: color 0.25s;
-                transition: color 0.25s;
-                text-align: center; /* Added property */
+                    line-height: 28px;
+                    -webkit-transition: color 0.25s;
+                    transition: color 0.25s;
+                    text-align: center; /* Added property */
+                }
             }
         </style>
     </head>
 
     <body>
-        <div class="container top-banner" >
-            <div class="before" ></div>
+        <div class="container top-banner">
+            <div class="before"></div>
             <div>
                 <p>
                     <strong>Əlaqə</strong>
@@ -111,14 +113,32 @@
             <div>
                 <ul style="margin-block-start: 0.5rem">
                     <li style="display: flex; gap: 4px">
-                        <a target="_blank" href="https://www.facebook.com/archdigitalstudio">
-                            <i class="fab fa-facebook" style="color: #316ff6"></i>
+                        <a
+                            target="_blank"
+                            href="https://www.facebook.com/archdigitalstudio"
+                        >
+                            <i
+                                class="fab fa-facebook"
+                                style="color: #316ff6"
+                            ></i>
                         </a>
-                        <a target="_blank" href="https://www.instagram.com/arch_digital_">
-                            <i class="fab fa-instagram" style="color: #ff0084"></i>
+                        <a
+                            target="_blank"
+                            href="https://www.instagram.com/arch_digital_"
+                        >
+                            <i
+                                class="fab fa-instagram"
+                                style="color: #ff0084"
+                            ></i>
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/company/arch-digitalagency">
-                            <i class="fab fa-linkedin-in" style="color: #3282bf"></i>
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/company/arch-digitalagency"
+                        >
+                            <i
+                                class="fab fa-linkedin-in"
+                                style="color: #3282bf"
+                            ></i>
                         </a>
                     </li>
                 </ul>
@@ -220,10 +240,10 @@
                     <div
                         class="d-flex justify-content-between align-items-center"
                     >
-                        <h2>Servis Paketleri</h2>
+                        <h2>Xidmətlər</h2>
                         <ol>
                             <li><a href="../../index.html">Ana səhifə</a></li>
-                            <li>Servis Paketleri</li>
+                            <li>Xidmətlər</li>
                         </ol>
                     </div>
                 </div>
@@ -233,17 +253,23 @@
             <!-- ======= Portfolio Details Section ======= -->
             <section id="portfolio-details" class="portfolio-details">
                 <div class="container">
-                    <h2 class="display-6 text-center mb-4">Xidmətlər</h2>
+                    <!-- <h2 class="display-6 text-center mb-4">Paketlər</h2> -->
 
                     <div class="table-responsive">
-                        <table class="table text-center">
-                            <thead>
+                        <table class="table">
+                            <!-- <thead>
                                 <tr>
-                                    <th style="display: flex">Xidmətlər</th>
-                                    <th style="width: 22%">Qiymət</th>
+                                    <th ></th>
+                                    <th >Ekonom</th>
                                 </tr>
-                            </thead>
+                            </thead> -->
                             <tbody>
+                                <tr>
+                                    <th scope="row" class="text-start">
+                                        Xidmətlər
+                                    </th>
+                                    <td>Qiymət</td>
+                                </tr>
                                 <tr>
                                     <th scope="row" class="text-start">
                                         Təkli Post
@@ -310,7 +336,6 @@
                                     </th>
                                     <td>20-50 AZN</td>
                                 </tr>
-
                                 <tr>
                                     <th scope="row" class="text-start">
                                         Promo videolar
@@ -366,7 +391,8 @@
             </section>
             <!-- End Portfolio Details Section -->
         </main>
-        <!-- End #main -->
+
+        <!-- End Main -->
 
         <!-- ======= Footer ======= -->
         <footer id="footer">
@@ -500,11 +526,9 @@
         <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-        
 
         <script src="../assets/js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../assets/js/stickyHeader.js"></script>
-
     </body>
 </html>
