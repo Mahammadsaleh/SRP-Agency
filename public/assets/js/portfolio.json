@@ -1,0 +1,140 @@
+[
+  {
+    "title": "IACCI",
+    "image": "./public/assets/img/clients/clients_iacci.png",
+    "category": "Company",
+    "link": "https://www.instagram.com/iacci_org/"
+  },
+  {
+    "title": "BiGA",
+    "image": "./public/assets/img/clients/clients_biga.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/biga_academy/"
+  },
+  {
+    "title": "CodeMonkey",
+    "image": "./public/assets/img/clients/clients_codemonkey.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/codemonkey_az/"
+  },
+  {
+    "title": "IATC",
+    "image": "./public/assets/img/clients/clients_iatc.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/iatceduaz/"
+  },
+  {
+    "title": "GYF Academy",
+    "image": "./public/assets/img/clients/clients_gyfacademy.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/gyf_academy_/"
+  },
+  {
+    "title": "Psixoloq Rühanə Mirzəyeva",
+    "image": "./public/assets/img/clients/clients-ruhane_psixoloq.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/psixoloq.ruhana.mirzayeva/"
+  },
+  {
+    "title": "LightUp",
+    "image": "./public/assets/img/clients/clients_lightup.png",
+    "category": "Agency",
+    "link": "https://www.instagram.com/lightup436/"
+  },
+  {
+    "title": "Uşaq əyləncələrinin təşkili",
+    "image": "./public/assets/img/clients/clients_farKids.png",
+    "category": "Agency",
+    "link": "https://www.instagram.com/farkidsshow/"
+  },
+  {
+    "title": "Swim Life Adventure",
+    "image": "./public/assets/img/clients/clients_swimlife.png",
+    "category": "Agency",
+    "link": "https://www.instagram.com/swim_life_adventure/"
+  },
+  {
+    "title": "RB Fitness",
+    "image": "./public/assets/img/clients/clients_rbfitness.jpg",
+    "category": "Company",
+    "link": "https://www.instagram.com/_rb_fitness_/"
+  },
+  {
+    "title": "ProGreen Azərbaycan",
+    "image": "./public/assets/img/clients/clients_progreen.jpg",
+    "category": "Company",
+    "link": "https://www.instagram.com/progreen_az/"
+  },
+  {
+    "title": "Tamtantuni Baku",
+    "image": "./public/assets/img/clients/clients_tamtantuni.jpg",
+    "category": "Agency",
+    "link": "https://www.instagram.com/tamtantuni.baku/"
+  },
+  {
+    "title": "Nail Art Könül",
+    "image": "./public/assets/img/clients/clients_nailartkonul.jpg",
+    "category": "Company",
+    "link": "https://www.instagram.com/nail.art_konul/"
+  },
+  {
+    "title": "Sara Shoes | Обувь Сара",
+    "image": "./public/assets/img/clients/clients_sarashoes.jpg",
+    "category": "Agency",
+    "link": "https://www.instagram.com/_sara_shoes_/"
+  },
+  {
+    "title": "Vəkil Fərrux Hüseynov",
+    "image": "./public/assets/img/clients/clients_ferrux_huseynov.png",
+    "category": "Company",
+    "link": "https://www.instagram.com/vekil_ferrux_huseynov/"
+  },
+  {
+    "title": "Alisa Qadın Geyimləri",
+    "image": "./public/assets/img/clients/clients_alisa_qadingeyimleri.png",
+    "category": "Company",
+    "link": "https://www.instagram.com/alisa_qadingeyimleri/"
+  },
+  {
+    "title": "ATID EDU",
+    "image": "./public/assets/img/clients/clients_atid_edu.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/atid_edu/"
+  },
+  {
+    "title": "Fahra Hasan",
+    "image": "./public/assets/img/clients/clients_fahra_hasan.png",
+    "category": "Company",
+    "link": "https://www.instagram.com/fahra.hasan/"
+  },
+  {
+    "title": "FR School",
+    "image": "./public/assets/img/clients/clients_frschool.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/frschool.edu.az/"
+  },
+  {
+    "title": "Gülnar İngilis Dili",
+    "image": "./public/assets/img/clients/clients_gulnar_ingilisdili.png",
+    "category": "Education",
+    "link": "https://www.instagram.com/gulnar_ingilisdili/"
+  },
+  {
+    "title": "Lion C&N Fitness",
+    "image": "./public/assets/img/clients/clients_lion_cn_fitness.png",
+    "category": "Company",
+    "link": "https://www.instagram.com/lion_cn_fitness/"
+  },
+  {
+    "title": "My Beach Novkhani",
+    "image": "./public/assets/img/clients/clients_mybeach_novkhani.png",
+    "category": "Company",
+    "link": "https://www.instagram.com/mybeach.novkhani/"
+  },
+  {
+    "title": "Nərimanov İdman Klubu",
+    "image": "./public/assets/img/clients/clients_nerimanov_idman_klubu.png",
+    "category": "Company",
+    "link": "https://www.instagram.com/nerimanov.idman.klubu/"
+  }
+]

@@ -12,11 +12,11 @@
       content="wdvu3hlylkc9ddhlbchuu0su6gb9ud"
     />
 
-    <link href="./public/assets/img/favicon/favicon.png" rel="icon" />
-    <link
-      href="./public/assets/img/favicon/favicon.png"
-      rel="apple-touch-icon"
-    />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -71,7 +71,7 @@
           <strong>Əlaqə</strong>
           <a href="tel:+994512309717">+994 51 230 97 17</a><br />
           <strong>Email: </strong>
-          <a href="mailto: s.saatov@comline.az"> s.saatov@comline.az </a>
+          <a href="mailto: info.archdigital.org@gmail.com"> info.archdigital.org@gmail.com </a>
         </p>
       </div>
       <div>
@@ -521,325 +521,71 @@
         </div>
       </section>
 
-      <section id="portfolio" class="portfolio">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+      
+          <!-- Section Title -->
+          <div class="section-title text-center">
             <h2>Portfolio</h2>
             <p>Portfolio'muzu nəzərdən keçirin</p>
           </div>
-
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
+      
+          <!-- Filter Buttons -->
+          <div class="row mb-3">
             <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">Company</li>
-                <li data-filter=".filter-card">Education</li>
-                <li data-filter=".filter-web">Agency</li>
+              <ul id="portfolio-filters" class="list-inline">
+                <li class="list-inline-item">
+                  <button 
+                    class="btn btn-outline-primary filter-btn active" 
+                    data-filter="All"
+                  >
+                    All
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button 
+                    class="btn btn-outline-primary filter-btn" 
+                    data-filter="Company"
+                  >
+                    Company
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button 
+                    class="btn btn-outline-primary filter-btn" 
+                    data-filter="Education"
+                  >
+                    Education
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button 
+                    class="btn btn-outline-primary filter-btn" 
+                    data-filter="Agency"
+                  >
+                    Agency
+                  </button>
+                </li>
+                <!-- Add more filters if needed -->
               </ul>
             </div>
           </div>
-
-          <div
-            class="row portfolio-container"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_iacci.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>IACCI</h4>
-                  <p>Company</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/iacci_org/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_biga.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>BiGA</h4>
-                  <p>Education</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/biga_academy/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_codemonkey.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>CodeMonkey</h4>
-                  <p>Education</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/codemonkey_az/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_iatc.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>IATC</h4>
-                  <p>Education</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/iatceduaz/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_gyfacademy.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>GYF Academy</h4>
-                  <p>Education</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/gyf_academy_/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients-ruhane_psixoloq.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Psixoloq Rühanə Mirzəyeva</h4>
-                  <p>Education</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/psixoloq.ruhana.mirzayeva/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_lightup.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>LightUp</h4>
-                  <p>Agency</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/lightup436/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_farKids.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Uşaq əyləncələrinin təşkili</h4>
-                  <p>Agency</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/farkidsshow/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_swimlife.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Swim Life Adventure</h4>
-                  <p>Agency</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/swim_life_adventure/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_rbfitness.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>RB Fitness</h4>
-                  <p>Company</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/_rb_fitness_/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_progreen.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>ProGreen Azərbaycan</h4>
-                  <p>Company</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/progreen_az/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_tamtantuni.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Tamtantuni Baku</h4>
-                  <p>Agency</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/tamtantuni.baku/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_nailartkonul.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Nail Art Könül</h4>
-                  <p>Company</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/nail.art_konul/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="./public/assets/img/clients/clients_sarashoes.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Sara Shoes | Обувь Сара</h4>
-                  <p>Agency</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.instagram.com/_sara_shoes_/"
-                      title="More Details"
-                      ><i class="bx bxl-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+      
+          <!-- Portfolio Grid (items will go here via JS) -->
+          <div id="portfolio-grid" class="row">
+            <!-- JavaScript will dynamically insert .col-lg-4 .col-md-6 etc. items here -->
           </div>
+      
+          <!-- Load More Button -->
+          <div class="text-center mt-4">
+            <button id="loadMoreBtn" class="btn btn-primary">
+              Load More
+            </button>
+          </div>
+      
         </div>
       </section>
+      
 
       <section id="counts" class="counts">
         <div class="container" data-aos="fade-up">
@@ -1206,8 +952,8 @@
                   >
                   <br />
                   <strong>Email: </strong>
-                  <a class="text-white" href="mailto:s.saatov@comline.az">
-                    s.saatov@comline.az</a
+                  <a class="text-white" href="mailto:info.archdigital.org@gmail.com">
+                    info.archdigital.org@gmail.com</a
                   >
                   <br />
                 </p>
@@ -1318,6 +1064,7 @@
     <script src="./public/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script src="./public/assets/js/main.js"></script>
+    <script src="./public/assets/js/portfolio.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="./public/assets/js/stickyHeader.js"></script>
