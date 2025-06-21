@@ -12,55 +12,81 @@
       content="wdvu3hlylkc9ddhlbchuu0su6gb9ud"
     />
 
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Preload Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      />
+    </noscript>
 
-    <link href="./public/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="./public/assets/vendor/aos/aos.css" />
     <link
+      rel="stylesheet"
       href="./public/assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
     />
     <link
+      rel="stylesheet"
       href="./public/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
     />
     <link
+      rel="stylesheet"
       href="./public/assets/vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
     />
     <link
+      rel="stylesheet"
       href="./public/assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
     />
     <link
+      rel="stylesheet"
       href="./public/assets/vendor/remixicon/remixicon.css"
-      rel="stylesheet"
     />
     <link
+      rel="stylesheet"
       href="./public/assets/vendor/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
     />
 
-    <link href="./public/assets/css/style.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+    <link rel="stylesheet" href="./public/assets/css/banner.css" />
+
+    <!-- Font Awesome (Preload) -->
     <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+      rel="preload"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    /></noscript>
 
-    <link href="./public/assets/css/banner.css" rel="stylesheet" />
-
-    <script
-      src="https://kit.fontawesome.com/ac2662f794.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Optimize AOS Animation Settings -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          easing: "ease-in-out",
+          duration: 700 /* Reduced duration for faster loading */,
+          delay: 0,
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -71,7 +97,9 @@
           <strong>Əlaqə</strong>
           <a href="tel:+994512309717">+994 51 230 97 17</a><br />
           <strong>Email: </strong>
-          <a href="mailto: info.archdigital.org@gmail.com"> info.archdigital.org@gmail.com </a>
+          <a href="mailto: info.archdigital.org@gmail.com">
+            info.archdigital.org@gmail.com
+          </a>
         </p>
       </div>
       <div>
@@ -147,7 +175,7 @@
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
-        <a href="#contact" class="get-started-btn scrollto">Müraciət et</a>
+        <a href="tel:+994512309717" class="get-started-btn scrollto">Müraciət et</a>
       </div>
     </header>
 
@@ -523,44 +551,43 @@
 
       <section id="portfolio" class="portfolio-section">
         <div class="container">
-      
           <!-- Section Title -->
           <div class="section-title text-center">
             <h2>Portfolio</h2>
             <p>Portfolio'muzu nəzərdən keçirin</p>
           </div>
-      
+
           <!-- Filter Buttons -->
           <div class="row mb-3">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-filters" class="list-inline">
                 <li class="list-inline-item">
-                  <button 
-                    class="btn btn-outline-primary filter-btn active" 
+                  <button
+                    class="btn btn-outline-primary filter-btn active"
                     data-filter="All"
                   >
                     All
                   </button>
                 </li>
                 <li class="list-inline-item">
-                  <button 
-                    class="btn btn-outline-primary filter-btn" 
+                  <button
+                    class="btn btn-outline-primary filter-btn"
                     data-filter="Company"
                   >
                     Company
                   </button>
                 </li>
                 <li class="list-inline-item">
-                  <button 
-                    class="btn btn-outline-primary filter-btn" 
+                  <button
+                    class="btn btn-outline-primary filter-btn"
                     data-filter="Education"
                   >
                     Education
                   </button>
                 </li>
                 <li class="list-inline-item">
-                  <button 
-                    class="btn btn-outline-primary filter-btn" 
+                  <button
+                    class="btn btn-outline-primary filter-btn"
                     data-filter="Agency"
                   >
                     Agency
@@ -570,22 +597,18 @@
               </ul>
             </div>
           </div>
-      
+
           <!-- Portfolio Grid (items will go here via JS) -->
           <div id="portfolio-grid" class="row">
             <!-- JavaScript will dynamically insert .col-lg-4 .col-md-6 etc. items here -->
           </div>
-      
+
           <!-- Load More Button -->
           <div class="text-center mt-4">
-            <button id="loadMoreBtn" class="btn btn-primary">
-              Load More
-            </button>
+            <button id="loadMoreBtn" class="btn btn-primary">Load More</button>
           </div>
-      
         </div>
       </section>
-      
 
       <section id="counts" class="counts">
         <div class="container" data-aos="fade-up">
@@ -680,7 +703,7 @@
                 <div class="testimonial-item">
                   <img
                     src="./public/assets/img/team/team_zaramalikzade.jpg"
-                    class="testimonial-img"
+                    class="testimonial-img" loading="lazy" 
                     alt=""
                   />
                   <h3>Zara Malikzade</h3>
@@ -709,7 +732,7 @@
                 <div class="testimonial-item">
                   <img
                     src="./public/assets/img/team/team_rasuljabbarov.jpg"
-                    class="testimonial-img"
+                    class="testimonial-img" loading="lazy" 
                     alt=""
                   />
                   <h3>Rəsul Jabbarov</h3>
@@ -728,7 +751,7 @@
                 <div class="testimonial-item">
                   <img
                     src="./public/assets/img/team/team_xadicealizade.jpg"
-                    class="testimonial-img"
+                    class="testimonial-img" loading="lazy" 
                     alt=""
                   />
                   <h3>Xədicə Əlizadə</h3>
@@ -749,7 +772,7 @@
                 <div class="testimonial-item">
                   <img
                     src="./public/assets/img/team/team_arzueyyubova.jpg"
-                    class="testimonial-img"
+                    class="testimonial-img" loading="lazy" 
                     alt=""
                   />
                   <h3>Arzu Eyyubova</h3>
@@ -845,7 +868,8 @@
         </div>
       </section>
 
-      <section id="contact" class="contact">
+      <!-- Contact Section -->
+      <!-- <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Əlaqə</h2>
@@ -853,9 +877,10 @@
           </div>
 
           <div class="row">
+
             <div class="col-lg-4 col-md-4 col-xs-12">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4421681210883!2d49.8485303752138!3d40.376891758064374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dbcc991f173%3A0x9624ac4d212d8134!2sArch%20Digital!5e0!3m2!1sen!2saz!4v1707300061876!5m2!1sen!2saz"
+                src="https://www.google.com/maps/embed?..."
                 width="100%"
                 height="300"
                 style="border: 0; border-radius: 0.5rem"
@@ -864,11 +889,12 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+
             <div class="col-lg-8 col-md-8 col-xs-12">
-              <div class="">
+              <div>
                 <form
-                  action="./send_email"
-                  method="post"
+                  action="send_email.php"
+                  method="POST"
                   class="php-email-form"
                 >
                   <div class="row">
@@ -893,6 +919,7 @@
                       />
                     </div>
                   </div>
+
                   <div class="form-group mt-3">
                     <input
                       type="text"
@@ -903,6 +930,7 @@
                       required
                     />
                   </div>
+
                   <div class="form-group mt-3">
                     <textarea
                       class="form-control"
@@ -912,13 +940,15 @@
                       required
                     ></textarea>
                   </div>
+
                   <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
+                    <div class="loading" style="display: none">Loading</div>
+                    <div class="error-message" style="display: none"></div>
+                    <div class="sent-message" style="display: none">
                       Your message has been sent. Thank you!
                     </div>
                   </div>
+
                   <div class="formSendBtn text-start">
                     <input type="submit" value="Send" />
                   </div>
@@ -927,7 +957,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer id="footer">
@@ -952,7 +982,10 @@
                   >
                   <br />
                   <strong>Email: </strong>
-                  <a class="text-white" href="mailto:info.archdigital.org@gmail.com">
+                  <a
+                    class="text-white"
+                    href="mailto:info.archdigital.org@gmail.com"
+                  >
                     info.archdigital.org@gmail.com</a
                   >
                   <br />
@@ -1049,24 +1082,29 @@
       </div>
     </footer>
 
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <script src="./public/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="./public/assets/vendor/aos/aos.js"></script>
-    <script src="./public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./public/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="./public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="./public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <script src="./public/assets/js/main.js"></script>
-    <script src="./public/assets/js/portfolio.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="./public/assets/js/stickyHeader.js"></script>
+      <div id="preloader"></div>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+          <i class="bi bi-arrow-up-short"></i>
+      </a>
+  
+      <!-- FontAwesome (Async) -->
+      <script src="https://kit.fontawesome.com/ac2662f794.js" crossorigin="anonymous" async></script>
+  
+      <!-- jQuery (Async) -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+  
+      <!-- Other Vendor Scripts (Defer) -->
+      <script src="./public/assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+      <script src="./public/assets/vendor/aos/aos.js" defer></script>
+      <script src="./public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+      <script src="./public/assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+      <script src="./public/assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+      <script src="./public/assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  
+      <!-- Your Custom Scripts (Defer) -->
+      <script src="./public/assets/js/main.js" defer></script>
+      <script src="./public/assets/js/portfolio.js" defer></script>
+      <!-- <script src="./public/assets/js/stickyHeader.js" defer></script> -->
   </body>
-</html>
+  </html>
+  
